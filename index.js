@@ -16,6 +16,7 @@ const app = express()
 app.use(express.json())
 const cors = require('cors')
 app.use(cors())
+app.use(express.static('build'))
 
 let notes = [
     {    id: 1,    content: "HTML is easy",    important: true  },
